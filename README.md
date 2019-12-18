@@ -10,13 +10,13 @@ During the exam, you are allowed to keep only one other browser tab open to refe
 
 ## Contents
 
-- [Core Concepts - 13%](a.core_concepts.md)  -- 18 questions
-- [Multi-container pods - 10%](b.multi_container_pods.md)  --  1 question
-- [Pod design - 20%](c.pod_design.md)  -- 39 questions
-- [Configuration - 18%](d.configuration.md)  -- 19 questions
-- [Observability - 18%](e.observability.md)  -- 7 questions
-- [Services and networking - 13%](f.services.md)  -- 9 questions
-- [State persistence - 8%](g.state.md)  -- 6 questions
+- [Core Concepts - 13%](a.core_concepts.md)  No of exercise questions -- 18 questions
+- [Multi-container pods - 10%](b.multi_container_pods.md)  No of exercise questions --  1 question
+- [Pod design - 20%](c.pod_design.md)  No of exercise questions -- 39 questions
+- [Configuration - 18%](d.configuration.md)  No of exercise questions -- 19 questions
+- [Observability - 18%](e.observability.md)  No of exercise questions -- 7 questions
+- [Services and networking - 13%](f.services.md)  No of exercise questions -- 9 questions
+- [State persistence - 8%](g.state.md)  No of exercise questions -- 6 questions
 
 ### Can I PR? There is an error/an alternative way/an extra question/solution I can offer
 

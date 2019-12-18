@@ -5,7 +5,7 @@
 
 kubernetes.io > Documentation > Tasks > Configure Pods and Containers > [Configure Liveness and Readiness Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/)
 
-### Create an nginx pod with a liveness probe that just runs the command 'ls'. Save its YAML in pod.yaml. Run it, check its probe status, delete it.
+### 1. Create an nginx pod with a liveness probe that just runs the command 'ls'. Save its YAML in pod.yaml. Run it, check its probe status, delete it.
 
 <details><summary>show</summary>
 <p>
@@ -47,7 +47,7 @@ kubectl delete -f pod.yaml
 </p>
 </details>
 
-### Modify the pod.yaml file so that liveness probe starts kicking in after 5 seconds whereas the period of probing would be 10 seconds. Run it, check the probe, delete it.
+### 2. Modify the pod.yaml file so that liveness probe starts kicking in after 5 seconds whereas the period of probing would be 10 seconds. Run it, check the probe, delete it.
 
 <details><summary>show</summary>
 <p>
@@ -90,7 +90,7 @@ kubectl delete -f pod.yaml
 </p>
 </details>
 
-### Create an nginx pod (that includes port 80) with an HTTP readinessProbe on path '/' on port 80. Again, run it, check the readinessProbe, delete it.
+### 3. Create an nginx pod (that includes port 80) with an HTTP readinessProbe on path '/' on port 80. Again, run it, check the readinessProbe, delete it.
 
 <details><summary>show</summary>
 <p>
@@ -136,7 +136,7 @@ kubectl delete -f pod.yaml
 
 ## Logging
 
-### Create a busybox pod that runs 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done'. Check its logs
+### 4. Create a busybox pod that runs 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done'. Check its logs
 
 <details><summary>show</summary>
 <p>
@@ -151,7 +151,7 @@ kubectl logs busybox -f # follow the logs
 
 ## Debugging
 
-### Create a busybox pod that runs 'ls /notexist'. Determine if there's an error (of course there is), see it. In the end, delete the pod
+### 5. Create a busybox pod that runs 'ls /notexist'. Determine if there's an error (of course there is), see it. In the end, delete the pod
 
 <details><summary>show</summary>
 <p>
@@ -167,7 +167,7 @@ kubectl delete po busybox
 </p>
 </details>
 
-### Create a busybox pod that runs 'notexist'. Determine if there's an error (of course there is), see it. In the end, delete the pod forcefully with a 0 grace period
+### 6. Create a busybox pod that runs 'notexist'. Determine if there's an error (of course there is), see it. In the end, delete the pod forcefully with a 0 grace period
 
 <details><summary>show</summary>
 <p>
@@ -184,7 +184,7 @@ kubectl delete po busybox --force --grace-period=0
 </p>
 </details>
 
-### Get CPU/memory utilization for nodes ([metrics-server](https://github.com/kubernetes-incubator/metrics-server) must be running)
+### 7. Get CPU/memory utilization for nodes ([metrics-server](https://github.com/kubernetes-incubator/metrics-server) must be running)
 
 <details><summary>show</summary>
 <p>

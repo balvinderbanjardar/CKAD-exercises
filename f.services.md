@@ -1,6 +1,8 @@
 Notes:
 $> kubectl expose deploy simple-webapp-deployment --port=8080 --type=NodePort -o yaml --dry-run
 
+$> kubectl run tempbox --rm -it --restart=Never --image=busybox -- sh
+
 
 ![](https://gaforgithub.azurewebsites.net/api?repo=CKAD-exercises/services&empty)
 # Services and Networking (13%)

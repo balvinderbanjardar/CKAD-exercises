@@ -1,3 +1,7 @@
+Notes:
+$> kubectl expose deploy simple-webapp-deployment --port=8080 --type=NodePort -o yaml --dry-run
+
+
 ![](https://gaforgithub.azurewebsites.net/api?repo=CKAD-exercises/services&empty)
 # Services and Networking (13%)
 
